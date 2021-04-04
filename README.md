@@ -1,6 +1,6 @@
 # jBrowserDriver
 
-This is a forked version of original jBrowserDriver that has JDK 11 support.
+This is a forked version of original jBrowserDriver that has JDK 11 support. Please see the master-jdk11 branch.
 
 A programmable, embeddable web browser driver compatible with the Selenium WebDriver spec -- headless, WebKit-based, pure Java
 
