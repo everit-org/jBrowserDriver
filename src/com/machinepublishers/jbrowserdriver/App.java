@@ -23,8 +23,8 @@ import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.util.List;
 
-import com.machinepublishers.glass.ui.monocle.NativePlatform;
-import com.machinepublishers.glass.ui.monocle.NativePlatformFactory;
+import com.sun.glass.ui.monocle.NativePlatform;
+import com.sun.glass.ui.monocle.NativePlatformFactory;
 import com.sun.glass.ui.Screen;
 import com.sun.javafx.webkit.Accessor;
 

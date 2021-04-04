@@ -69,16 +69,16 @@ class SettingsManager {
         System.setProperty("prism.order", "sw");
         System.setProperty("prism.allowhidpi", "false");
         System.setProperty("prism.text", "t2k");
-        try {
-          Class<?> platformFactory = Class.forName("com.sun.glass.ui.PlatformFactory");
-          Field field = platformFactory.getDeclaredField("instance");
-          field.setAccessible(true);
-          field.set(platformFactory, new com.machinepublishers.glass.ui.monocle.MonoclePlatformFactory());
-          com.machinepublishers.glass.ui.monocle.NativePlatformFactory.setPlatform(
-              new com.machinepublishers.glass.ui.monocle.HeadlessPlatform());
-        } catch (Throwable t) {
-          Util.handleException(t);
-        }
+//        try {
+//          Class<?> platformFactory = Class.forName("com.sun.glass.ui.PlatformFactory");
+//          Field field = platformFactory.getDeclaredField("instance");
+//          field.setAccessible(true);
+//          field.set(platformFactory, new com.sun.glass.ui.monocle.MonoclePlatformFactory());
+//          com.sun.glass.ui.monocle.NativePlatformFactory.setPlatform(
+//              new com.sun.glass.ui.monocle.HeadlessPlatform());
+//        } catch (Throwable t) {
+//          Util.handleException(t);
+//        }
       } else if (platformInitialized.compareAndSet(false, true)) {
         new JFXPanel();
       }
