@@ -1,4 +1,7 @@
 # jBrowserDriver
+
+This is a forked version of original jBrowserDriver that has JDK 11 support.
+
 A programmable, embeddable web browser driver compatible with the Selenium WebDriver spec -- headless, WebKit-based, pure Java
 
 Licensed under the Apache License v2.0 ([details](https://raw.githubusercontent.com/MachinePublishers/jBrowserDriver/master/LICENSE)).
