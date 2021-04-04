@@ -1,17 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.machinepublishers</groupId>
-  <artifactId>jbrowserdriver</artifactId>
-  <name>${project.groupId}:${project.artifactId}</name>
+  <groupId>org.everit.forks</groupId>
+  <artifactId>org.everit.forks.com.machinepublishers</artifactId>
+  <name>${project.artifactId}</name>
   <description>A programmable, embeddable web browser driver compatible with the Selenium WebDriver spec -- headless, WebKit-based, pure Java</description>
-  <version>1.1.1</version>
+  <!--
+   Fixes
+    - Special keys were not sent well neither in headless nor in headful mode.
+   -->
+  <version>1.1.1-patch.1</version>
   <packaging>jar</packaging>
   <url>https://github.com/machinepublishers/jbrowserdriver</url>
   <scm>
-    <connection>scm:git:git@github.com:MachinePublishers/jBrowserDriver.git</connection>
-    <developerConnection>scm:git:git@github.com:MachinePublishers/jBrowserDriver.git</developerConnection>
-    <url>git@github.com:MachinePublishers/jBrowserDriver.git</url>
+    <connection>scm:git:git@github.com:everit-org/jBrowserDriver.git</connection>
+    <developerConnection>scm:git:git@github.com:everit-org/jBrowserDriver.git</developerConnection>
+    <url>git@github.com:everit-org/jBrowserDriver.git</url>
   </scm>
   <developers>
     <developer>
@@ -352,16 +356,16 @@
       <type>jar</type>
     </dependency>
   </dependencies>
-  <distributionManagement>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-    <repository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-  </distributionManagement>
+<!--   <distributionManagement> -->
+<!--     <snapshotRepository> -->
+<!--       <id>ossrh</id> -->
+<!--       <url>https://oss.sonatype.org/content/repositories/snapshots</url> -->
+<!--     </snapshotRepository> -->
+<!--     <repository> -->
+<!--       <id>ossrh</id> -->
+<!--       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url> -->
+<!--     </repository> -->
+<!--   </distributionManagement> -->
   <build>
     <sourceDirectory>${basedir}/src/</sourceDirectory>
     <resources>
