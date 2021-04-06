@@ -3,7 +3,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.everit.forks</groupId>
-  <artifactId>org.everit.forks.com.machinepublishers</artifactId>
+  <artifactId>org.everit.forks.com.machinepublishers.jbrowserdriver</artifactId>
   <name>${project.artifactId}</name>
   <description>A programmable, embeddable web browser driver compatible with the Selenium WebDriver spec -- headless, WebKit-based, pure Java</description>
   <!--
@@ -433,23 +433,6 @@
             <id>attach-sources</id>
             <goals>
               <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>3.2.1</version>
-        <configuration>
-          <shadedArtifactAttached>true</shadedArtifactAttached>
-          <shadedClassifierName>uberjar</shadedClassifierName>
-        </configuration>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
             </goals>
           </execution>
         </executions>
